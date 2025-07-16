@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular Derecho UCentral</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Curricular Derecho - Universidad Central</h1>
+  <div class="malla">
+    <!-- Primer Año -->
+    <div class="ramo" data-id="1" data-prerrequisitos="">Introducción al Derecho</div>
+    <div class="ramo" data-id="2" data-prerrequisitos="">Historia del Derecho</div>
+    <div class="ramo" data-id="3" data-prerrequisitos="">Técnicas de la Comunicación Jurídica</div>
+    <div class="ramo" data-id="4" data-prerrequisitos="">Teoría del Estado</div>
+    <div class="ramo" data-id="5" data-prerrequisitos="">Filosofía del Derecho</div>
+    <div class="ramo" data-id="6" data-prerrequisitos="1,3">Derecho Romano</div>
+
+    <!-- Segundo Año -->
+    <div class="ramo" data-id="7" data-prerrequisitos="4">Derecho Constitucional I</div>
+    <div class="ramo" data-id="8" data-prerrequisitos="6">Derecho Civil I</div>
+    <div class="ramo" data-id="9" data-prerrequisitos="8">Derecho Civil II</div>
+    <div class="ramo" data-id="10" data-prerrequisitos="">Derecho Económico</div>
+    <div class="ramo" data-id="11" data-prerrequisitos="7">Derecho Constitucional II</div>
+    <div class="ramo" data-id="12" data-prerrequisitos="10">Análisis Económico del Derecho</div>
+
+    <!-- Tercer Año -->
+    <div class="ramo" data-id="13" data-prerrequisitos="9">Derecho Civil III</div>
+    <div class="ramo" data-id="14" data-prerrequisitos="">Derecho Penal I</div>
+    <div class="ramo" data-id="15" data-prerrequisitos="14">Derecho Penal II</div>
+    <div class="ramo" data-id="16" data-prerrequisitos="11">Derecho Administrativo I</div>
+    <div class="ramo" data-id="17" data-prerrequisitos="16">Derecho Administrativo II</div>
+
+    <!-- Cuarto Año -->
+    <div class="ramo" data-id="18" data-prerrequisitos="13">Derecho Civil IV</div>
+    <div class="ramo" data-id="19" data-prerrequisitos="18">Derecho Civil V</div>
+    <div class="ramo" data-id="20" data-prerrequisitos="19">Derecho Civil VI</div>
+    <div class="ramo" data-id="21" data-prerrequisitos="15">Derecho Procesal Penal</div>
+    <div class="ramo" data-id="22" data-prerrequisitos="17">Derecho Procesal Administrativo</div>
+    <div class="ramo" data-id="23" data-prerrequisitos="20">Derecho de Familia</div>
+
+    <!-- Quinto Año -->
+    <div class="ramo" data-id="24" data-prerrequisitos="20">Derecho del Trabajo</div>
+    <div class="ramo" data-id="25" data-prerrequisitos="23">Derecho de Sucesiones</div>
+    <div class="ramo" data-id="26" data-prerrequisitos="24">Clínica Jurídica</div>
+    <div class="ramo" data-id="27" data-prerrequisitos="25">Seminario de Grado</div>
+  </div>
+  <button onclick="resetMalla()">Resetear Progreso</button>
+  <script src="script.js"></script>
+</body>
+</html>
